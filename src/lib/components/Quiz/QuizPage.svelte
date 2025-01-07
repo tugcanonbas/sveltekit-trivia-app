@@ -89,9 +89,9 @@
 		</div>
 
 		<div class="flex flex-row items-center justify-center gap-1 rounded-lg px-5 py-2">
-			<span class="text-xl font-medium">Time Left:</span>
+			<span class="text-base font-medium sm:text-xl">Time Left:</span>
 			<span
-				class="text-xl font-medium"
+				class="text-base font-medium sm:text-xl"
 				style="color: hsl({$quizStore.timeLeft * 1.2}, {theme === 'light' ? '50%' : '100%'}, 50%)"
 			>
 				{$quizStore.timeLeft}
@@ -102,7 +102,7 @@
 	<div class="flex h-full w-full flex-col items-center justify-center gap-5">
 		{#if $quizStore.finished}
 			<div class="flex w-full flex-col items-center justify-center gap-5">
-				<span class="text-3xl font-semibold">
+				<span class="text-xl font-semibold sm:text-3xl">
 					You scored <span
 						style="color: hsl({$quizStore.quiz.score! * 1.2}, {theme === 'light'
 							? '50%'
@@ -126,10 +126,10 @@
 				</div>
 
 				<div
-					class="px- 2 flex flex-col items-center justify-center gap-1 rounded-lg bg-sky-500 px-10 py-2 text-white"
+					class="flex flex-col items-center justify-center gap-1 rounded-lg bg-sky-500 px-10 py-2 text-white"
 				>
-					<span class="uppercase">Question</span>
-					<div class="flex flex-col items-center justify-center gap-2">
+					<span class="text-sm uppercase sm:text-base">Question</span>
+					<div class="flex flex-col items-center justify-center gap-2 text-sm sm:text-base">
 						<span>{$quizStore.currentQuestionIndex + 1} of {$quizStore.quiz.questions.length}</span>
 					</div>
 				</div>
@@ -147,19 +147,21 @@
 		{/if}
 
 		{#if $quizStore.currentQuestionIndex === -1}
-			<div class="flex min-h-[46.27vh] w-full flex-col items-center justify-center gap-10">
-				<span class="max-w-3xl text-center text-2xl font-semibold">
+			<div class="flex w-full flex-col items-center justify-center gap-10 sm:min-h-[46.27vh]">
+				<span class="max-w-3xl text-center text-base font-semibold sm:text-2xl">
 					Yay! You've completed the quiz! Click the indicators below to see your answers.
 				</span>
 			</div>
 		{:else}
-			<div class="flex min-h-60 w-full flex-col items-center justify-center gap-10">
-				<span class="max-w-5xl text-center text-2xl font-semibold">
+			<div class="flex min-h-40 w-full flex-col items-center justify-center gap-10">
+				<span class="max-w-5xl text-center text-base font-semibold sm:text-2xl">
 					{he.decode($quizStore.quiz.questions[$quizStore.currentQuestionIndex].question)}
 				</span>
 			</div>
 
-			<div class="flex min-h-72 min-w-96 flex-col items-center justify-start gap-5">
+			<div
+				class="flex min-h-60 min-w-96 flex-col items-center justify-start gap-2 py-5 sm:min-h-72 sm:gap-5"
+			>
 				{#each $quizStore.quiz.questions[$quizStore.currentQuestionIndex].answers as answer}
 					<AnswerButton
 						{answer}
@@ -183,7 +185,7 @@
 	</div>
 
 	<div class="flex w-full flex-col items-center justify-center gap-10">
-		<div class="flex flex-wrap items-center justify-center gap-2 px-10 sm:px-0">
+		<div class="flex flex-wrap items-center justify-center gap-2 px-20 sm:px-0">
 			{#if $quizStore.finished}
 				<IndicatorDot
 					index={-1}

@@ -17,7 +17,7 @@
 
 <button
 	on:click={onClick}
-	class="w-full rounded-lg border-2 px-10 py-2 text-xl transition duration-300 hover:scale-105
+	class="w-full rounded-lg border-2 px-5 py-1 text-base transition duration-300 hover:scale-105 sm:px-10 sm:py-2 sm:text-xl
 	{style[state]}"
 >
 	<span>{he.decode(answer.text)}</span>

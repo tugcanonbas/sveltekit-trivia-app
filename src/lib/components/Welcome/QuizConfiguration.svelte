@@ -52,12 +52,12 @@
 <div class="flex h-full w-full flex-col items-center justify-start gap-10">
 	<div>
 		<div class="flex flex-col items-center justify-center gap-2">
-			<span class="text-2xl font-semibold">Configurations</span>
+			<span class="font-semibold sm:text-2xl">Configurations</span>
 			<div class="flex flex-col items-center justify-center gap-2">
 				<select
 					disabled={loading}
 					name="trivia_category"
-					class="peer block w-full appearance-none border-0 border-b-2 border-gray-200 bg-transparent px-0 py-2.5 text-sm text-gray-500 focus:border-gray-200 focus:outline-none focus:ring-0 dark:border-gray-700 dark:text-gray-400"
+					class="peer block w-full appearance-none border-0 border-b-2 border-gray-200 bg-transparent px-0 py-2.5 text-xs text-gray-500 focus:border-gray-200 focus:outline-none focus:ring-0 sm:text-sm dark:border-gray-700 dark:text-gray-400"
 				>
 					<option value="any">Any Category</option>
 					<option value="9">General Knowledge</option>
