@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Geist Mono", serif;
+	transition:
+		background-color 0.5s ease-in-out,
+		color 0.2s ease-in-out;
+	@apply bg-background-light text-foreground-light dark:bg-black dark:text-background-light;
+}

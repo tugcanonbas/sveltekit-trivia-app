@@ -1,0 +1,29 @@
+enum Category {
+	any = 'any',
+	generalKnowledge = 9,
+	entertainmentBooks = 10,
+	entertainmentFilm = 11,
+	entertainmentMusic = 12,
+	entertainmentMusicalsTheatres = 13,
+	entertainmentTelevision = 14,
+	entertainmentVideoGames = 15,
+	entertainmentBoardGames = 16,
+	scienceNature = 17,
+	scienceComputers = 18,
+	scienceMathematics = 19,
+	mythology = 20,
+	sports = 21,
+	geography = 22,
+	history = 23,
+	politics = 24,
+	art = 25,
+	celebrities = 26,
+	animals = 27,
+	vehicles = 28,
+	entertainmentComics = 29,
+	scienceGadgets = 30,
+	entertainmentJapaneseAnimeManga = 31,
+	entertainmentCartoonAnimations = 32
+}
+
+export default Category;
