@@ -183,7 +183,7 @@
 	</div>
 
 	<div class="flex w-full flex-col items-center justify-center gap-10">
-		<div class="flex flex-row items-center justify-center gap-2">
+		<div class="flex flex-wrap items-center justify-center gap-2 px-10 sm:px-0">
 			{#if $quizStore.finished}
 				<IndicatorDot
 					index={-1}

@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div class="container m-auto flex w-full flex-col">
-	<main class="flex h-screen w-full items-center justify-center">
+	<main class="flex h-[100svh] w-full items-center justify-center">
 		{@render children()}
 	</main>
 </div>
