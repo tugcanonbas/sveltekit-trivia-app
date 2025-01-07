@@ -10,7 +10,7 @@ Welcome to the SvelteKit Trivia App! This project showcases my skills in fronten
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
+- [Special Thanks](#special-thanks)
 - [Contributing](#contributing)
 - [License](#license)
 
