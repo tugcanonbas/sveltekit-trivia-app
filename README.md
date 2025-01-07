@@ -2,7 +2,7 @@
 
 Welcome to the SvelteKit Trivia App! This project showcases my skills in frontend development using SvelteKit, a modern framework for building fast and scalable web applications.
 
-# Check the live version [here](https://sveltekit-trivia-app-tgcn.vercel.app/)
+# Check the live version [here](https://sveltekit-trivia-app.vercel.app/)
 
 ## Table of Contents
 
