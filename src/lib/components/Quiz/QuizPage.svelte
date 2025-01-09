@@ -66,9 +66,9 @@
 	</div>
 {/if}
 
-<div class="container flex h-full w-full flex-col items-center justify-between">
+<div class="container flex h-full w-full flex-col items-center justify-center">
 	{#if $quizStore.finished && $quizStore.quiz.score! >= 80}
-		<div class="absolute inset-0 -z-10 -mt-10">
+		<div class="absolute top-0 -z-10 -mt-10">
 			<Confetti
 				x={[-5, 5]}
 				y={[0, 0.1]}
